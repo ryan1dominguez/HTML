@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--html structure shortcut is ! + Tab-->
+<html>
+
+    <head>
+        <!-- title which is on the webpage-->
+        <title>HTML Cheat Sheet</title>
+    </head>
+ 
+    <body>
+        <a href = "blog.html">Go to Blog</a>
+        <hr>
+        <!--Headings, h1 - h6, decreases size as the numbers increment-->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+        <!--Paragraphs, lorem + tab to generate words, they start a new block-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, impedit.</p>
+        <!-- a tag is for hyper links, href is the link you want to go to, and target _blank means open up a new tab-->
+        <p>Lorem ipsum, dolor <a href = "http://google.com" target = _blank>Lorem ipsum dolor sit amet.</a>sit amet consectetur adipisicing elit. Deserunt, neque.</p>
+        <!--UL is unorderd list, which is made up of bullet points, li is list, -->
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+        <!-- ol is an ordered list, made up of numbers, 1., 2., 3., ...-->
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!--Table: Use for tabular data only, don't use for website layout-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ryan Dominguez</td>
+                    <td>ryan@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>John@gmail.com</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>jane@gmail.com</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Br adds a line break-->
+        <br>
+        <!--hr adds a horizontal rule, which is a line that runs horizontally-->
+        <hr>
+        <br>
+        <!--Forms actoin is where the form is being submitted, method is how, either POST or GET, use POST-->
+        <!-- Div blocks things together and puts what's not that block on a new line-->
+        <form action="process.php" method = "POST">
+            <div>
+                <label>First Name</label>
+                <!--Place holder allows for text to be in the box, but it disappears right after the user clicks on the box-->
+                <input type = "text" name = "firstName" placeholder = "Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <!-- type text allows for a box where text can be inputted-->
+                <input type = "text" name = "lastName">
+            </div>
+            <br>
+            <div>
+                <!--Use type == "email" when dealing with forms and inputing emails-->
+                <label>Email</label>
+                <input type = "email" name = "email">
+            </div>
+            <br>
+            <div>
+                <!--text area creates a big aread where people can type in text and change the size-->
+                <label>Message</label>
+                <textarea name = "message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <!-- select allows you to put a list of seletable optoins, option is the title of those options-->
+                <select name = "gender">
+                    <option value = "male">Male</option>
+                    <option value = "female">Female</option>
+                    <option value = "male">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age</label>
+                <!--type number this lets the user scroll through the number system, starting at the value, or empty if value isn't included-->
+                <input type = "number" name = "age">
+            </div>
+            <br>
+            <div>
+                <label>Date</label>
+                <!--type date allows users to input a date (mm/dd/yyy)-->
+                <input type = "date" name = "birthday">
+            </div>
+            <br>
+            <!--type submit creates a button that can be used to submit the form -->
+            <input type = "submit" name = "submit" value = "Submit">
+        </form>
+
+        <!--Buttons (in order to hook up a button to do something you need to use javascript)-->
+        <button>Click me</button>
+        <br>
+        <!--Images (self closing): src is source, name of the file, if not located in the same folder, you have to use source/ before the name of file-->
+        <!--Alt: If you can't find the image, display this text instead, html has a width and length option to change, but css is recommended to do that-->
+        <!--Height is auto, but if you want to change the height you can-->
+        <!--Can wrap the image in a link too-->
+        <a href = "images/sample.jfif">
+        <img src = "images/sample.jfif" alt = "My Sample Image" width = "100">
+        </a>
+        <!--Quotations-->
+        <blockquote cite= "http://traversymedia.com">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis laborum cupiditate, quaerat assumenda cum mollitia temporibus quos eos deserunt adipisci incidunt totam, ut autem aut ea culpa, earum minus. Distinctio?
+        </blockquote>
+        <!--Abbr used to abreviate, will show an underline under the abbreviation and show what it means-->
+        <p>The <abbr title = "World Wide Web">WWW</abbr> is awesome</p>
+        <!--Cite makes the text italicized-->
+        <p><cite>HTML crash course</cite> by Brad Traversy</p>
+        <!--Semantic tags describes its meaning to both brower and developer, header, footer, aside, main, article, nav, section, details -->
+    </body>
+
+</html>
